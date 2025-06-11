@@ -1,8 +1,8 @@
 import React from 'react'
 import "../styles/header.css"
 
-export default function header() {
+export default function Hamburger() {
   return (
-    <div>header</div>
+    <div>Hamburger</div>
   )
 }

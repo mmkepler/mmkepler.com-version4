@@ -1,9 +1,9 @@
-import exercise from "../images/projects/exercise.webp";
-import abstract from "../images/projects/image-ab.webp";
-import pomodoro from "../images/projects/pomo.jpg";
-import mmkepler from "../images/projects_logo.webp";
-import shortener from "../images/projects/shortener.jpg";
-import tetris from "../images/projects/tetris.jpg";
+import exercise from "../assets/projects/exercise.webp";
+import abstract from "../assets/projects/image-ab.webp";
+import pomodoro from "../assets/projects/pomo.jpg";
+import mmkepler from "../assets/projects_logo.webp";
+import shortener from "../assets/projects/shortener.jpg";
+import tetris from "../assets/projects/tetris.jpg";
 
 const projectData2 = [
 {id: 7,

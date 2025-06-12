@@ -1,8 +1,8 @@
-import header from "../images/projects/header.jpg";
-import timestamp from "../images/projects/timestamp.jpg";
-import calc from "../images/projects/calc.jpg";
-import metadata from "../images/projects/metadata.jpg";
-import wiki from "../images/projects/wiki.jpg";
+import header from "../assets/projects/header.jpg";
+import timestamp from "../assets/projects/timestamp.jpg";
+import calc from "../assets/projects/calc.jpg";
+import metadata from "../assets/projects/metadata.jpg";
+import wiki from "../assets/projects/wiki.jpg";
 
 const projectData3 = [
   {id: 13,

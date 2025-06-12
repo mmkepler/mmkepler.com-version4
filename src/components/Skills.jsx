@@ -1,6 +1,5 @@
 import React from 'react'
 import "../styles/skills.css"
-import planet from "../assets/bullet.png"
 
 const artisticSkills = ["Graphic Design", "Photo Editing", "Photoshop", "Illustrator", "Sketch", "3D Animation/Modeling"]
 const codingSkills = ["JavaScript/ES6+", "React/Hooks", "Redux", "CSS/Flexbox", "Styled Components", "Bootstrap", "Sass", "Node.js", "Express.js", "MongoDB", "Accessibility", "npm", "Git/GitHub", "Firebase DB & Auth", "Webpack/Babel", "Gulp/Grunt", "Rest APIs", "JQuery"]

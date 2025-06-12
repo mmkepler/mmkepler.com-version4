@@ -1,0 +1,60 @@
+#skills {
+  width: 100%;
+}
+
+.skillsBullet {
+  width: 10px;
+  height: 9px;
+}
+
+.skillsContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.skillsWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: left;
+}
+
+.skillsWrapper ul {
+ min-width: 224px;
+}
+
+.skilltTitles {
+  text-align: left;
+}
+
+
+.listItems {
+  list-style-image: url("../assets/bullet.png");
+}
+
+.columns {
+  display: flex;
+  flex-direction: row;
+  column-gap: 40px;
+}
+
+.one {
+  display: flex;
+  flex-direction: column;
+}
+
+.two {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 600px){
+  .columns {
+    display: block;
+  }
+  .section {
+    background-color: white;
+  }
+}

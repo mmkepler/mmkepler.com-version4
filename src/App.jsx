@@ -12,24 +12,26 @@ import Gap from './components/Gap'
 import Footer from './components/Footer'
 import './styles/App.css'
 import NotFound from './components/NotFound'
+import Contact from "./components/contact"
 
 
 function App() {
-  const [nav, setNav] = useState(true)
+  const [menu, setMenu] = useState(false)
   const toggleMenu = (e) => {
     e.preventDefault()
-    setNav(!nav)
+    setMenu(!menu)
   }
 
   return (
     <div id="root">
-      {nav ? <Header onClick={(e) => toggleMenu(e)}/> : <Hamburger/>}
+      {menu ? <Header onClick={(e) => toggleMenu(e)}/> : <Hamburger/>}
       <div id="main">
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/about" element={<About/>}/>
           <Route path="/skills" element={<Skills/>}/>
           <Route path="/projects" element={<Projects/>}/>
+          <Route path="/contact" element={<Contact/>}/>
           <Route path="/resume" element={<Resume/>}/>
           <Route path="/gap" element={<Gap/>}/>
           <Route path="*" element={<NotFound/>}/>

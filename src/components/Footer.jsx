@@ -8,7 +8,7 @@ export default function Footer() {
   let date = new Date();
   let year = date.getFullYear();
   return (
-    <footer className="footer">
+    <footer id="footer">
       <p className="copyright">
       ©{year} Melissa Kepler
       </p>

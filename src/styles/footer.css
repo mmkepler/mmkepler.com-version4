@@ -1,12 +1,13 @@
-.footer {
+#footer {
   display: flex;
-  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin-left: 0;
   margin-right: 0;
   justify-content: space-evenly;
   align-items: center;
   background-color: black;
-  height: 65px;
+  
   width: 100%;
   box-shadow: 1px -2px 5px #009799;
   border-top: 3px solid white;
@@ -15,7 +16,7 @@
 .socialIcon img {
   height: 32px;
   width: 32x;
-  
+  padding-top: 6px;
 }
 
 .socialIcon,
@@ -27,6 +28,9 @@
 .socialIconsFooter {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 4px;
 }
 
 @media only screen and (max-width: 420px) {

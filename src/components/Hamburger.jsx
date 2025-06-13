@@ -1,20 +1,29 @@
 import React from 'react'
 import { Link } from 'react-router'
 import "../styles/header.css"
-import logo from "../assets/logo2.png"
 
 export default function Hamburger(props) {
   return (
-    <nav className="nav">
-      <ul className="header">
-        <li className="item" tabIndex="0"><Link to="/"><img alt="" src={logo} width="60x" height="50px" ></img></Link></li>
-
-        <li id="toggle">
-          <button className="menu" onClick={props.onClick} type="button" aria-expanded="false" aria-label="hamburger menu">
-          <span className="hamburger"></span>
-          <span className="hamburger"></span>
-          <span className="hamburger"></span>
-          </button>
+    <nav id="mobile">
+      <button type="button" id="close" className="close" onClick={props.onClick}>x</button>
+      <ul>
+        <li  className="link">
+          <Link to="/" onClick={props.onClick} >Home</Link>
+        </li>
+        <li className="link">
+          <Link to="/about" onClick={props.onClick} >About</Link>
+        </li>
+        <li className="link">
+          <Link to="/skills" onClick={props.onClick} >Skills</Link>
+        </li>
+        <li className="link">
+          <Link to="/projects" onClick={props.onClick} >Projects</Link>
+        </li>
+        <li className="link">
+          <Link to="/contact" onClick={props.onClick} >Contact</Link>
+        </li>
+        <li className="link">
+          <Link to="/gap" onClick={props.onClick} >Resume Gap</Link>
         </li>
       </ul>
     </nav>

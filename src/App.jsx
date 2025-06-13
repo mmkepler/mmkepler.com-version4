@@ -17,14 +17,20 @@ import Contact from "./components/contact"
 
 function App() {
   const [menu, setMenu] = useState(false)
+
   const toggleMenu = (e) => {
     e.preventDefault()
     setMenu(!menu)
   }
 
+  const close = (e) => {
+    e.preventDefault()
+    setMenu(false)
+  }
+
   return (
     <div id="root">
-      {menu ? <Header onClick={(e) => toggleMenu(e)}/> : <Hamburger/>}
+      {!menu ? <Header onClick={(e) => toggleMenu(e)}/> : <Hamburger onClick={(e) => close(e)}/>}
       <div id="main">
         <Routes>
           <Route path="/" element={<Home/>}/>

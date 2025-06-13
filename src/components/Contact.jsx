@@ -10,7 +10,7 @@ export default function Contact() {
   const [formData, setFormData] = useState(initialState)
   const [success, setSuccess] = useState(false)
   const [failure, setFailure] = useState(false)
-  const [showForm, setShowForm] = useState(false)
+  const [showForm, setShowForm] = useState(true)
 
 console.log("formData ", formData)
   const handleChange = (e) => {
@@ -23,7 +23,8 @@ console.log("formData ", formData)
 
   const submitForm = (event) => {
     event.preventDefault();
-    const templateId = import.meta.env.VITE_API_TEMPLATE_ID;
+    const templateId = "asewerdsdf"
+    //const templateId = import.meta.env.VITE_API_TEMPLATE_ID;
     const publicKey = import.meta.env.VITE_API_PUBLIC_KEY;
     const serviceId = import.meta.env.VITE_API_SERVICE_ID;
     //let formInfo = {from_name: formData.name, from_email: formData.email, message: formData.message, reply_to: formData.email};
@@ -34,14 +35,15 @@ console.log("formData ", formData)
       serviceId, templateId, form.current, {publicKey: publicKey})
       .then(() => {
         console.log("worked")
-        setSuccess({show: true})
-        setShowForm({show: false});
+        setSuccess(true)
+        setShowForm(false);
         setFormData(initialState);
         })
       .catch(err => {
         console.log("error", err);
-        setShowForm({show: false});
-        setFailure({show:true})
+        setShowForm(false);
+        setFailure(true)
+        setFormData(initialState)
       });
   }
 
@@ -54,7 +56,7 @@ console.log("formData ", formData)
         </span>
       </div>
       <section className="section" >
-      <form 
+      {showForm &&<form 
         id="form"
         onSubmit={(event) => submitForm(event)}
         ref={form}
@@ -121,7 +123,9 @@ console.log("formData ", formData)
           className="submit" id="submit">
           Submit
         </button>
-      </form>
+      </form>}
+      {success && <Success/>}
+      {failure && <Failure/>}
     </section>
     </main>
   )

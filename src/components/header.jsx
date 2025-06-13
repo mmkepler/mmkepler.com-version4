@@ -6,7 +6,7 @@ export default function Header(props) {
   return (
     <nav className="nav">
       <ul className="header">
-        <li className="items" id="home">
+        <li className="items">
           <Link to="/">Melissa<br></br>Kepler</Link>
         </li>
         <li className="items single">
@@ -19,10 +19,10 @@ export default function Header(props) {
           <Link to="/projects">Projects</Link>
         </li>
         <li className="items single">
-          <Link to="Contact">Contact</Link>
+          <Link to="/contact">Contact</Link>
         </li>
-        <li className="items">
-          <Link to="gap">Resume Gap</Link>
+        <li className="items" id="gapLink">
+          <Link to="/gap">Resume<br></br>Gap</Link>
         </li>
         <li className="toggle">
           <button className="menu" onClick={props.onClick}>

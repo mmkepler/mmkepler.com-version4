@@ -1,6 +1,7 @@
 #contact {
   margin-top: 100px;
   margin-bottom: 60px;
+  font-size: 1.2em;
 }
 
 .space {
@@ -13,29 +14,20 @@
 .emailInput, .nameInput, .messageInput {
   text-align: center;
   padding: 10px;
-  margin-top: 20px;
+  margin-top: 8px;
   margin-bottom: 20px;
   border-radius: 4px;
   border: 2px solid #009799;
 }
 
 .submit {
-  height: 36px;
   margin: 10px;
   padding: 10px;
+  font-size: 1.2em;
   background-color: #009799;
   text-shadow: 1px 1px 2px black, -1px -1px 2px black;
   box-shadow: 1px 1px 3px #003333, -1px -1px 3px #003333;
   border: none;
   color: white;
   border-radius: 4px;
-}
-
-.planets {
-  height: 100px;
-  width: 100px;
-}
-
-.sendMessage {
-  font-size: 1.3rem;
 }

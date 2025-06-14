@@ -8,7 +8,7 @@ import projectData from "../data/data"
 
 export default function Projects() {
   return (
-    <main id="projects">
+    <article id="projects">
       <div className="holder">
         <span className="spanleft"></span>
           <h2 className="title" tabIndex="0">Projects</h2><span className="spanright">
@@ -43,7 +43,7 @@ export default function Projects() {
         })}
         </div>
       </section>
-    </main>
+    </article>
   )
 }
 

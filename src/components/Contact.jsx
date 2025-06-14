@@ -52,10 +52,10 @@ console.log("formData ", formData)
     <main id="contact">
       <div className="holder">
         <span className="spanleft"></span>
-          <h2 className="title" tabIndex="0">Projects</h2><span className="spanright">
+          <h2 className="title" tabIndex="0">Contact</h2><span className="spanright">
         </span>
       </div>
-      <section className="section" >
+      <section className="section">
       {showForm &&<form 
         id="form"
         onSubmit={(event) => submitForm(event)}

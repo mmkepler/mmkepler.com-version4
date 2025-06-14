@@ -9,12 +9,12 @@ import "../styles/about.css"
 
 export default function About() {
   return (
-    <section id="about"
+    <article id="about"
     name="about">
       <div className="holder">
       <span className="spanleft"></span><h2 className="title" tabIndex="0">About</h2><span className="spanright"></span>
       </div>
-    <div className="section" >
+    <section className="section" >
 
         {/*Main Bio Text Part */}
       <div className="topSpacer">
@@ -125,7 +125,7 @@ export default function About() {
       </a>
       </div>
       
-    </div>
     </section>
+    </article>
   )
 }

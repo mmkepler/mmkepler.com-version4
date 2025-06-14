@@ -9,7 +9,7 @@ const knowledgeableSkills = ["Next.js", "Workbox/PWA", "Google Analytics", "Apol
 
 export default function Skills() {
   return (
-    <section id="skills">
+    <article id="skills">
       <div className="holder">
         <span className="spanleft"></span><h2 className="title" tabIndex="0">Skills</h2><span className="spanright"></span>
       </div>
@@ -20,7 +20,7 @@ export default function Skills() {
         <div className="columns">
         
           <div className="one">
-            <div>
+            <section>
             <h3 className="skilltTitles">Coding Skills</h3>
             <ul>
               {codingSkills.map(function(el, index){
@@ -29,11 +29,11 @@ export default function Skills() {
                 )
               })}
             </ul>
-          </div>
+          </section>
 
         
               
-          <div>
+          <section>
             <h3 className="skilltTitles">Deployment Platforms</h3>
             <ul>
               {deploymentSkills.map(function(el, index){
@@ -42,13 +42,13 @@ export default function Skills() {
                 )
               })}
             </ul>
-          </div>
+          </section>
 
           </div>
 
           <div className="two">
 
-          <div>
+          <section>
             <h3 className="skilltTitles">Knowledgeable In:</h3>
             <ul>
               {knowledgeableSkills.map(function(el, index){
@@ -57,9 +57,9 @@ export default function Skills() {
                 )
               })}
             </ul>
-          </div>
+          </section>
 
-          <div>
+          <section>
             <h3 className="skilltTitles">Artistic Skills:</h3>
             <ul>
               {artisticSkills.map(function(el, index){
@@ -68,12 +68,12 @@ export default function Skills() {
                 )
               })}
             </ul>
-          </div>
+          </section>
           </div>
         </div>
         </div>
       </div>
      </div>
-    </section>
+    </article>
   )
 }

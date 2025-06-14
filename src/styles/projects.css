@@ -1,6 +1,12 @@
+#projects {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
 .divider {
   border-left: 1px dotted #009799;
   border-right: 1px dotted #009799;
+  
 }
 
 .projectsTitle {

@@ -1,5 +1,5 @@
 import React from 'react'
-import "../styles/skills.css"
+import skillstyles from "../styles/skills.module.css"
 
 const artisticSkills = ["Graphic Design", "Photo Editing", "Photoshop", "Illustrator", "Sketch", "3D Animation/Modeling"]
 const codingSkills = ["JavaScript/ES6+", "React/Hooks", "Redux", "CSS/Flexbox", "Styled Components", "Bootstrap", "Sass", "Node.js", "Express.js", "MongoDB", "Accessibility", "npm", "Git/GitHub", "Firebase DB & Auth", "Webpack/Babel", "Gulp/Grunt", "Rest APIs", "JQuery"]
@@ -9,23 +9,23 @@ const knowledgeableSkills = ["Next.js", "Workbox/PWA", "Google Analytics", "Apol
 
 export default function Skills() {
   return (
-    <article id="skills">
-      <div className="holder">
-        <span className="spanleft"></span><h2 className="title" tabIndex="0">Skills</h2><span className="spanright"></span>
+    <article id={skillstyles.skills}>
+      <div className={skillstyles.holder}>
+        <span className={skillstyles.spanleft}></span><h2 className={skillstyles.title} tabIndex="0">Skills</h2><span className={skillstyles.spanright}></span>
       </div>
-      <div className="section" >
-      <div className="skillsContainer">
-        <div className="skillsWrapper">
+      <div className={skillstyles.section}>
+      <div className={skillstyles.skillsContainer}>
+        <div className={skillstyles.skillsWrapper}>
         
-        <div className="columns">
+        <div className={skillstyles.columns}>
         
-          <div className="one">
+          <div className={skillstyles.one}>
             <section>
-            <h3 className="skilltTitles">Coding Skills</h3>
+            <h3 className={skillstyles.skilltTitles}>Coding Skills</h3>
             <ul>
               {codingSkills.map(function(el, index){
                 return(
-                  <li tabIndex="0" key={index} className="listItems">{el}</li>
+                  <li tabIndex="0" key={index} className={skillstyles.listItems}>{el}</li>
                 )
               })}
             </ul>
@@ -34,11 +34,11 @@ export default function Skills() {
         
               
           <section>
-            <h3 className="skilltTitles">Deployment Platforms</h3>
+            <h3 className={skillstyles.skilltTitles}>Deployment Platforms</h3>
             <ul>
               {deploymentSkills.map(function(el, index){
                 return(
-                  <li tabIndex="0" key={index} className="listItems">{el}</li>
+                  <li tabIndex="0" key={index} className={skillstyles.listItems}>{el}</li>
                 )
               })}
             </ul>
@@ -46,25 +46,25 @@ export default function Skills() {
 
           </div>
 
-          <div className="two">
+          <div className={skillstyles.two}>
 
           <section>
-            <h3 className="skilltTitles">Knowledgeable In:</h3>
+            <h3 className={skillstyles.skilltTitles}>Knowledgeable In:</h3>
             <ul>
               {knowledgeableSkills.map(function(el, index){
                 return(
-                  <li tabIndex="0" key={index} className="listItems">{el}</li>
+                  <li tabIndex="0" key={index} className={skillstyles.listItems}>{el}</li>
                 )
               })}
             </ul>
           </section>
 
           <section>
-            <h3 className="skilltTitles">Artistic Skills:</h3>
+            <h3 className={skillstyles.skilltTitles}>Artistic Skills:</h3>
             <ul>
               {artisticSkills.map(function(el, index){
                 return(
-                  <li tabIndex="0" key={index} className="listItems">{el}</li>
+                  <li tabIndex="0" key={index} className={skillstyles.listItems}>{el}</li>
                 )
               })}
             </ul>

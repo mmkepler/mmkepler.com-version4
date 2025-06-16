@@ -1,34 +1,34 @@
 import React from 'react'
-import "../styles/header.css"
+import headerstyles from "../styles/header.module.css"
 import { Link } from 'react-router'
 
 export default function Header(props) {
   return (
-    <nav className="nav">
-      <ul className="header">
-        <li className="items">
+    <nav className={headerstyles.nav}>
+      <ul className={headerstyles.header}>
+        <li className={headerstyles.items}>
           <Link to="/">Melissa<br></br>Kepler</Link>
         </li>
-        <li className="items single">
+        <li className={`${headerstyles.items} ${headerstyles.single}`}>
           <Link to="/about">About</Link>
         </li>
-        <li className="items single">
+        <li className={`${headerstyles.items} ${headerstyles.single}`}>
           <Link to="/skills">Skills</Link>
         </li>
-        <li className="items single">
+        <li className={`${headerstyles.items} ${headerstyles.single}`}>
           <Link to="/projects">Projects</Link>
         </li>
-        <li className="items single">
+        <li className={`${headerstyles.items} ${headerstyles.single}`}>
           <Link to="/contact">Contact</Link>
         </li>
-        <li className="items" id="gapLink">
+        <li className={headerstyles.items} id={headerstyles.gapLink}>
           <Link to="/gap">Resume<br></br>Gap</Link>
         </li>
-        <li className="toggle">
-          <button className="menu" onClick={props.onClick}>
-          <span className="hamburger"></span>
-          <span className="hamburger"></span>
-          <span className="hamburger"></span></button>
+        <li className={headerstyles.toggle}>
+          <button className={headerstyles.menu} onClick={props.onClick}>
+          <span className={headerstyles.hamburger}></span>
+          <span className={headerstyles.hamburger}></span>
+          <span className={headerstyles.hamburger}></span></button>
         </li>
       </ul>
     </nav>

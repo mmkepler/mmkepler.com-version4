@@ -1,5 +1,5 @@
 import React from 'react'
-import "../styles/projects.css"
+import projectstyles from "../styles/projects.module.css"
 import website from "../assets/website.png"
 import gitHubCat from "../assets/GitHub-Mark-32px.png"
 
@@ -8,32 +8,32 @@ import projectData from "../data/data"
 
 export default function Projects() {
   return (
-    <article id="projects">
-      <div className="holder">
-        <span className="spanleft"></span>
-          <h2 className="title" tabIndex="0">Projects</h2><span className="spanright">
+    <article id={projectstyles.projects}>
+      <div className={projectstyles.holder}>
+        <span className={projectstyles.spanleft}></span>
+          <h2 className={projectstyles.title} tabIndex="0">Projects</h2><span className={projectstyles.spanright}>
         </span>
       </div>
-      <section className="section" >
-      <div className="cardSpacer" >
+      <section className={projectstyles.section} >
+      <div className={projectstyles.cardSpacer} >
 
         {projectData.map(function(el, index){
           return (
             
-          <div className="card" key={index}>
-            <div className="imageWrapper" >
-              <img src={el.image} alt={el.altText} className="projectIamge" />
+          <div className={projectstyles.card} key={index}>
+            <div className={projectstyles.imageWrapper} >
+              <img src={el.image} alt={el.altText} className={projectstyles.projectIamge} />
             </div>
-            <div className="textWrap">
-            <h2 className="projectsTitle" tabIndex="0">{el.name}</h2>
-            <p className="text" tabIndex="0">{el.text}</p>
+            <div className={projectstyles.textWrap}>
+            <h2 className={projectstyles.projectsTitle} tabIndex="0">{el.name}</h2>
+            <p className={projectstyles.text} tabIndex="0">{el.text}</p>
             </div>
-            <div className="cardMenu">
+            <div className={projectstyles.cardMenu}>
               
-              <a href={el.webLink} className="buttonWrapper" aria-label="link to hosted project" target="_blank" rel="noopener noreferrer">
-                <img className="web" src={website} alt="An image to represent a website" />
+              <a href={el.webLink} className={projectstyles.buttonWrapper} aria-label="link to hosted project" target="_blank" rel="noopener noreferrer">
+                <img className={projectstyles.web} src={website} alt="An image to represent a website" />
               </a>
-              <a href={el.gitLink} className="buttonWrapper" aria-label="link to github repository" target="_blank" rel="noopener noreferrer">
+              <a href={el.gitLink} className={projectstyles.buttonWrapper} aria-label="link to github repository" target="_blank" rel="noopener noreferrer">
                 <img src={gitHubCat} alt="The GitHub Octocat logo"/>
               </a>
             </div>

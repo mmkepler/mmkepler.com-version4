@@ -1,10 +1,10 @@
 import React from 'react'
-import "../styles/failure.css"
+import fs from "../styles/failure.module.css"
 
 export default function Failure() {
   return (
-    <div className="failure">
-      <p className="warning">Red Alert</p>
+    <div className={fs.failure}>
+      <p className={fs.styles}>Red Alert</p>
       Your message was not sent<br/>
       Please refresh page and try again
     </div>

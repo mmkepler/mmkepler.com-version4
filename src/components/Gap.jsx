@@ -1,8 +1,8 @@
 import React from 'react'
-import "../styles/gap.css"
+import gapstyles from "../styles/gap.module.css"
 
 export default function Gap() {
   return (
-    <div>Gap</div>
+    <div id={gapstyles.gap}>Gap</div>
   )
 }

@@ -23,18 +23,17 @@ console.log("formData ", formData)
 
   const submitForm = (event) => {
     event.preventDefault();
-    const templateId = "asewerdsdf"
-    //const templateId = import.meta.env.VITE_API_TEMPLATE_ID;
+    const templateId = import.meta.env.VITE_API_TEMPLATE_ID;
     const publicKey = import.meta.env.VITE_API_PUBLIC_KEY;
     const serviceId = import.meta.env.VITE_API_SERVICE_ID;
     //let formInfo = {from_name: formData.name, from_email: formData.email, message: formData.message, reply_to: formData.email};
-    console.log("templateId ", templateId)
-    console.log("publicKey ", publicKey)
-    console.log("serviceId ", serviceId)
+    //console.log("templateId ", templateId)
+    //console.log("publicKey ", publicKey)
+    //console.log("serviceId ", serviceId)
     emailjs.sendForm(
       serviceId, templateId, form.current, {publicKey: publicKey})
       .then(() => {
-        console.log("worked")
+        //console.log("worked")
         setSuccess(true)
         setShowForm(false);
         setFormData(initialState);

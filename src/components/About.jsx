@@ -4,25 +4,24 @@ import resumeImg from "../assets/resume.png"
 import gitHub from "../assets/GitHub-Mark-32px.png" 
 import behance from "../assets/behance.webp"
 import linkedin from "../assets/linkedin.webp"
-import "../styles/about.css"
+import aboutstyles from "../styles/about.module.css"
 
 
 export default function About() {
   return (
-    <article id="about"
-    name="about">
-      <div className="holder">
-      <span className="spanleft"></span><h2 className="title" tabIndex="0">About</h2><span className="spanright"></span>
+    <article id={aboutstyles.about}>
+      <div className={aboutstyles.holder}>
+      <span className={aboutstyles.spanleft}></span><h2 className={aboutstyles.title} tabIndex="0">About</h2><span className={aboutstyles.spanright}></span>
       </div>
-    <section className="section" >
+    <section className={aboutstyles.section} >
 
         {/*Main Bio Text Part */}
-      <div className="topSpacer">
-        <div className="picWrapper">
-          <img  className="mypic" src={me} alt="photo of Melissa Kepler photoshopped to look like it came from a space ship information display"/>
+      <div className={aboutstyles.topSpacer}>
+        <div className={aboutstyles.picWrapper}>
+          <img  className={aboutstyles.mypic} src={me} alt="photo of Melissa Kepler photoshopped to look like it came from a space ship information display"/>
           </div>
           <h3 tabIndex="0">Greetings Earthlings!</h3>
-        <div className="textWrap">
+        <div className={aboutstyles.textWrap}>
           <p tabIndex="0">
           I was the owner of Melissa Kepler Web Design &amp; Development, but I am currently looking for a full-time Front End or Full Stack React remote position.
           </p>
@@ -35,7 +34,7 @@ export default function About() {
              In 2018 I won a Grow with Google scholarship and earned Udacity&apos;s Mobile Web Specialist Nanodegree.
               A lot of my learning has been through project creation. &nbsp;
               <br/>
-              <a href="https://github.com/mmkepler" target="_blank" rel="noreferrer" id="gitLink">My GitHub is full of projects, please take a look!</a>
+              <a href="https://github.com/mmkepler" target="_blank" rel="noreferrer" id={aboutstyles.gitLink}>My GitHub is full of projects, please take a look!</a>
           </p>
           <p tabIndex="0"><strong>The dreaded resume gap!</strong> - Just as I was going to make my career jump into programming, my fiance died from injuries caused by a car accident on our way to get married.
              I had to settle his estate while dealing with my PTSD, and I took time off to do this. During this time I started my own business and did some graphic and web work. I also worked on studying as well.
@@ -49,12 +48,12 @@ export default function About() {
           </p>
           <p tabIndex="0">Although I included links, I don&apos;t spend much time on social media. Frankly I would rather just have tweets from birds.</p>
         </div>
-        <div className="resume">
+        <div className={aboutstyles.resume}>
           <a href="/resume" target="_blank" rel="noreferrer">
-            <div className="resumeHolder">Check out my resume here : &nbsp; 
+            <div className={aboutstyles.resumeHolder}>Check out my resume here : &nbsp; 
           
               <img src={resumeImg}
-            className="resumeIcon" alt="icon of a resume"/> 
+            className={aboutstyles.resumeIcon} alt="icon of a resume"/> 
           
             </div>
           </a>
@@ -63,48 +62,48 @@ export default function About() {
       <br/>
 
       {/* prof Links */}
-      <div className="profLinks" >
+      <div className={aboutstyles.profLinks} >
         
-        <div className="profSpacer">
-          <a className="iconLink" href="https://www.linkedin.com/in/mmkepler/" target="_blank" rel="noreferrer">
+        <div className={aboutstyles.profSpacer}>
+          <a className={aboutstyles.iconLink} href="https://www.linkedin.com/in/mmkepler/" target="_blank" rel="noreferrer">
             <p>Work History: </p>
-            <div className="logos">
+            <div className={aboutstyles.logos}>
               <img src={linkedin} alt="The LinkedIn logo." />
             </div>
           </a>
         </div>
 
-        <div className="profSpacer">
-          <a className="iconLink" href="https://github.com/mmkepler" target="_blank" rel="noreferrer">
+        <div className={aboutstyles.profSpacer}>
+          <a className={aboutstyles.iconLink} href="https://github.com/mmkepler" target="_blank" rel="noreferrer">
             <p>Projects: </p>
-            <div className="logos">
+            <div className={aboutstyles.logos}>
               <img src={gitHub} alt="The GitHub Octocat logo." />
             </div>
           </a>
         </div>
 
-        <div className="profSpacer">
-          <a className="iconLink" href="https://www.behance.net/mmkepler" target="_blank" rel="noreferrer">
+        <div className={aboutstyles.profSpacer}>
+          <a className={aboutstyles.iconLink} href="https://www.behance.net/mmkepler" target="_blank" rel="noreferrer">
             <p>Artwork: </p>
-            <div className="logos">
-              <img className="behance" src={behance} alt="The Behance logo."/>
+            <div className={aboutstyles.logos}>
+              <img className={aboutstyles.behance} src={behance} alt="The Behance logo."/>
             </div>
           </a>
         </div>
       </div>
 
       <h3 tabIndex="0">Educational Certificates</h3>
-      <div className="certs">
-        <a className="links" href="/images/StanfordCert.pdf" target="_blank" rel="noreferrer">
+      <div className={aboutstyles.certs}>
+        <a className={aboutstyles.links} href="/images/StanfordCert.pdf" target="_blank" rel="noreferrer">
           Stanford Online Computer Science 101 Certificate
         </a>
-        <a  className="links" href="/images/udacity.jpg" target="_blank" rel="noreferrer">
+        <a  className={aboutstyles.links} href="/images/udacity.jpg" target="_blank" rel="noreferrer">
           Udacity Nanodegree in Mobile Web Specialist
         </a>
-        <a  className="links" href="/images/React-For-Beginners.png" target="_blank" rel="noreferrer">
+        <a  className={aboutstyles.links} href="/images/React-For-Beginners.png" target="_blank" rel="noreferrer">
           Wes Bos React For Beginners Course
         </a>
-        <a  className="links" href="/images/Advanced-React.png" target="_blank" rel="noreferrer">
+        <a  className={aboutstyles.links} href="/images/Advanced-React.png" target="_blank" rel="noreferrer">
           Wes Bos Advanced React & GraphQL Course
         </a>
       </div>
@@ -112,15 +111,15 @@ export default function About() {
       {/*Prof Links End */}
 
       <h3 tabIndex="0">Free Code Camp Certifications Links</h3>
-      <div className="fcc">
+      <div className={aboutstyles.fcc}>
         
-      <a className="links" href="https://www.freecodecamp.org/certification/mmkepler/responsive-web-design" target="_blank" rel="noreferrer">
+    <a className={aboutstyles.links} href="https://www.freecodecamp.org/certification/mmkepler/responsive-web-design" target="_blank" rel="noreferrer">
         Responsive Web Design
       </a>
-      <a className="links" href="https://www.freecodecamp.org/certification/mmkepler/javascript-algorithms-and-data-structures" target="_blank" rel="noreferrer">
+      <a className={aboutstyles.links} href="https://www.freecodecamp.org/certification/mmkepler/javascript-algorithms-and-data-structures" target="_blank" rel="noreferrer">
         JS Algorithms and Data Structures
       </a>
-      <a className="links" href="https://www.freecodecamp.org/certification/mmkepler/back-end-development-and-apis" target="_blank" rel="noreferrer">
+      <a className={aboutstyles.links} href="https://www.freecodecamp.org/certification/mmkepler/back-end-development-and-apis" target="_blank" rel="noreferrer">
         Back End Development &amp; APIs
       </a>
       </div>

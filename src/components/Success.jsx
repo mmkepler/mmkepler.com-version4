@@ -1,10 +1,10 @@
 import React from 'react'
-import "../styles/success.css"
+import ss from "../styles/success.module.css"
 
 export default function Success() {
   return (
-    <div id="success" className="success">
-      <p className="title">Success!</p>
+    <div id={ss.success} className={ss.success}>
+      <p className={ss.title}>Success!</p>
       Your message has been sent.
     </div>
   )

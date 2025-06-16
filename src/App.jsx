@@ -23,8 +23,7 @@ function App() {
     setMenu(!menu)
   }
 
-  const close = (e) => {
-    e.preventDefault()
+  const close = () => {
     setMenu(false)
   }
 

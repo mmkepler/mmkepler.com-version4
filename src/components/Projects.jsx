@@ -2,8 +2,6 @@ import React from 'react'
 import projectstyles from "../styles/projects.module.css"
 import website from "../assets/website.png"
 import gitHubCat from "../assets/GitHub-Mark-32px.png"
-
-import projectData from "../data/data"
 import projectsdata from "../data/projectsdata"
 import projectsdata2 from "../data/projectsdata2"
 

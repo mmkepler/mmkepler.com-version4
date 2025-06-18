@@ -85,17 +85,22 @@
   background: rgb(0,151,153);
   background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,151,153,1) 100%);
   border: 1px solid #009799;
-  
   color: black;
   margin: 10px 10px;
+}
+
+.shortcard{
+  min-height:180px;
+  padding-top: 20px;
+  
 }
 
 .projectImage {
   display: flex;
   border-radius: 50%;
   z-index: 50;
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
   max-width: auto;
 }
 .imageWrapper {

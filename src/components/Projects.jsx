@@ -4,6 +4,8 @@ import website from "../assets/website.png"
 import gitHubCat from "../assets/GitHub-Mark-32px.png"
 
 import projectData from "../data/data"
+import projectsdata from "../data/projectsdata"
+import projectsdata2 from "../data/projectsdata2"
 
 
 export default function Projects() {
@@ -17,12 +19,64 @@ export default function Projects() {
       <section className={projectstyles.section} >
       <div className={projectstyles.cardSpacer} >
 
-        {projectData.map(function(el, index){
+
+        <div className={`${projectstyles.card} ${projectstyles.shortcard}`}>
+          <div className={projectstyles.textWrap}>
+            <h2 className={projectstyles.projectsTitle} tabIndex="0">mmkepler GitHub</h2>
+           <p className={projectstyles.text} tabIndex="0">see all of my projects</p>
+          </div>
+          <div className={projectstyles.cardMenu}>
+            <a href="https://github.com/mmkepler" className={projectstyles.buttonWrapper} aria-label="link to github repository" target="_blank" rel="noopener noreferrer">
+              <img src={gitHubCat} alt="The GitHub Octocat logo"/>
+            </a>
+          </div>
+        </div>
+
+        <div className={`${projectstyles.card} ${projectstyles.shortcard}`}>
+          <div className={projectstyles.textWrap}>
+          <h2 className={projectstyles.projectsTitle} tabIndex="0">My GitHub</h2>
+          <p className={projectstyles.text} tabIndex="0">The code for this site</p>
+          </div>
+          <div className={projectstyles.cardMenu}>
+            <a href="https://github.com/mmkepler/mmkepler.com-version4" className={projectstyles.buttonWrapper} aria-label="link to github repository" target="_blank" rel="noopener noreferrer">
+              <img src={gitHubCat} alt="The GitHub Octocat logo"/>
+            </a>
+          </div>
+        </div>
+
+            
+
+        {projectsdata.map(function(el, index){
           return (
             
           <div className={projectstyles.card} key={index}>
             <div className={projectstyles.imageWrapper} >
-              <img src={el.image} alt={el.altText} className={projectstyles.projectIamge} />
+              <img src={el.image} alt={el.altText} className={projectstyles.projectImage} />
+            </div>
+            <div className={projectstyles.textWrap}>
+            <h2 className={projectstyles.projectsTitle} tabIndex="0">{el.name}</h2>
+            <p className={projectstyles.text} tabIndex="0">{el.text}</p>
+            </div>
+            <div className={projectstyles.cardMenu}>
+              
+              <a href={el.webLink} className={projectstyles.buttonWrapper} aria-label="link to hosted project" target="_blank" rel="noopener noreferrer">
+                <img className={projectstyles.web} src={website} alt="An image to represent a website" />
+              </a>
+              <a href={el.gitLink} className={projectstyles.buttonWrapper} aria-label="link to github repository" target="_blank" rel="noopener noreferrer">
+                <img src={gitHubCat} alt="The GitHub Octocat logo"/>
+              </a>
+            </div>
+            </div>
+          )
+          
+        })}
+          <h2>Here are my backend projects that I have to find alternate hosting for since bit coin miners ruined free tiers.</h2>
+          {projectsdata2.map(function(el, index){
+          return (
+            
+          <div className={projectstyles.card} key={index}>
+            <div className={projectstyles.imageWrapper} >
+              <img src={el.image} alt={el.altText} className={projectstyles.projectImage} />
             </div>
             <div className={projectstyles.textWrap}>
             <h2 className={projectstyles.projectsTitle} tabIndex="0">{el.name}</h2>

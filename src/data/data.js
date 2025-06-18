@@ -1,4 +1,4 @@
-import puplanta from "../assets/projects/corgi4.webp";
+import puplanta from "../assets/projects/puplanta-paw.png";
 import weather2 from "../assets/projects/weather3.png";
 import zap from "../assets/projects/zap.jpg";
 import simon from "../assets/projects/simon.jpg";
@@ -20,9 +20,9 @@ const projectData = [
 {id: 1,
 name: "Puplanta",
 image: puplanta,
-altText: "The state of Georgia colored orange, with a corgi head, a heart and a corgi butt on it",
+altText: "A pawprint with a gradient color of purle to orange changing horizontally",
 text: "Dog Park and Shop voting app",
-gitLink: "https://github.com/mmkepler/puplanta2",
+gitLink: "https://github.com/mmkepler/mmkepler.com-version4",
 webLink: "https://puplanta.com/"
 },
 {id: 2,
